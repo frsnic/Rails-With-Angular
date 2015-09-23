@@ -5,3 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+100.times do
+  user = User.new
+  user.name = [*('a'..'z')].sample(6).join.camelize
+  user.save
+end
