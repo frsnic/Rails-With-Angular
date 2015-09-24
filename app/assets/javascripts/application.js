@@ -12,5 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+
+// Angular need load first
+//= require angular
+//= require angular-route
+//= require ./angular/angular_main
+//= require_tree ./angular/
+
 //= require_tree .

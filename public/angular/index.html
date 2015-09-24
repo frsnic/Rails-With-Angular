@@ -1,0 +1,23 @@
+<div ng-controller="UsersIndexCtrl" class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <table class="table">
+        <thead>
+          <th>Name</th>
+          <th>Action</th>
+        </thead>
+        <tbody>
+          <tr ng-repeat="user in users">
+            <td> {{ user.name }} </td>
+            <td>
+              <a href="#">Show</a>
+              <a href="#">Edit</a>
+              <a href="#">Destroy</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
