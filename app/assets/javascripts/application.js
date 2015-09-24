@@ -16,6 +16,7 @@
 // Angular need load first
 //= require angular
 //= require angular-route
+//= require ng-rails-csrf
 //= require ./angular/angular_main
 //= require_tree ./angular/
 

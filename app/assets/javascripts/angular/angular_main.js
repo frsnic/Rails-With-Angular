@@ -1,5 +1,5 @@
 var rails_angular = angular.module('rails_angular', [
-  'ngRoute'
+  'ngRoute', 'ng-rails-csrf'
 ]);
 
 rails_angular.config([
