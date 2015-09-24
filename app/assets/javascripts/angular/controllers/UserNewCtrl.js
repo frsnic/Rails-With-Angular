@@ -1,5 +1,5 @@
 rails_angular.controller('UserNewCtrl', [
-  '$scope', '$location', '$http', function($scope, $location, $http) {
+  '$scope', '$http', function($scope, $http) {
     $scope.user = {};
 
     $scope.reset = function() {
@@ -7,11 +7,7 @@ rails_angular.controller('UserNewCtrl', [
     };
 
     $scope.update = function() {
-      $http({
-          method: 'POST',
-          url: '/users',
-          data: $scope.user
-      }).
+      $http.post('/users', $scope.user).
       then(function(response) {
         $scope.response = response.status + ": " + response.statusText;
         console.log(response);
@@ -20,6 +16,5 @@ rails_angular.controller('UserNewCtrl', [
         console.log(response);
       });
     };
-
   }
 ]);
