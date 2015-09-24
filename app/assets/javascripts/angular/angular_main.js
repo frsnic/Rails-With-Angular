@@ -4,6 +4,10 @@ var rails_angular = angular.module('rails_angular', [
 
 rails_angular.config([
   '$routeProvider', function($routeProvider) {  return $routeProvider.
+    when('/users/new', {
+      templateUrl: '../angular/users/new.html',
+      controller: 'UserNewCtrl'
+    }).
     when('/users/:id', {
       templateUrl: '../angular/users/show.html',
       controller: 'UserShowCtrl'

@@ -1,0 +1,13 @@
+<div class="col-sm-offset-4 col-sm-4">
+  <h1>User New Page</h1>
+  <form novalidate class="simple-form">
+    Name: <input type="text" ng-model="user.name" class="form-control" /><br />
+    <input type="button" ng-click="reset()" value="Reset" class="btn btn-warning" />
+    <input type="submit" ng-click="update(user)" value="Submit" class="btn btn-primary" />
+  </form>
+  <hr>
+
+  <pre>user = {{user | json}}</pre>
+
+  <a href="/" class="btn btn-primary">Index</a>
+</div>
