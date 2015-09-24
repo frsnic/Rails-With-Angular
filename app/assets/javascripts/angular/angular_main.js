@@ -8,6 +8,10 @@ rails_angular.config([
       templateUrl: '../angular/users/new.html',
       controller: 'UserNewCtrl'
     }).
+    when('/users/:id/edit', {
+      templateUrl: '../angular/users/edit.html',
+      controller: 'UserEditCtrl'
+    }).
     when('/users/:id', {
       templateUrl: '../angular/users/show.html',
       controller: 'UserShowCtrl'
