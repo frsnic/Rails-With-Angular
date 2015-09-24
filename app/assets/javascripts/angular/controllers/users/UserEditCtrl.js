@@ -1,12 +1,12 @@
 rails_angular.controller('UserEditCtrl', [
   '$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
     $scope.user = {};
-    $http.get("./users/" + $routeParams.id + ".json").success(function(data) {
+    $http.get("/users/" + $routeParams.id + ".json").success(function(data) {
       $scope.user = data;
     });
 
     $scope.reset = function() {
-      $http.get("./users/" + $routeParams.id + ".json").success(function(data) {
+      $http.get("/users/" + $routeParams.id + ".json").success(function(data) {
         $scope.user = data;
       });
     };
@@ -17,7 +17,7 @@ rails_angular.controller('UserEditCtrl', [
         $scope.response = response.status + ": " + response.statusText;
         console.log(response);
       }, function(response) {
-        $scope.response = response.status + ": " + response.statusText;
+        $scope.response = response.status + ": " + response.data.name.join(", ");
         console.log(response);
       });
     };

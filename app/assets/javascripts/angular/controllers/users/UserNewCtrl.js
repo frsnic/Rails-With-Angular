@@ -12,7 +12,7 @@ rails_angular.controller('UserNewCtrl', [
         $scope.response = response.status + ": " + response.statusText;
         console.log(response);
       }, function(response) {
-        $scope.response = response.status + ": " + response.statusText;
+        $scope.response = response.status + ": " + response.data.name.join(", ");
         console.log(response);
       });
     };
