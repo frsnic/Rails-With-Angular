@@ -1,0 +1,22 @@
+{
+  "name": "rails-with-angular",
+  "version": "1.0.0",
+  "description": "![Alt text](https://travis-ci.org/frsnic/rails-with-angular.svg \"Optional Title\")",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frsnic/rails-with-angular.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frsnic/rails-with-angular/issues"
+  },
+  "homepage": "https://github.com/frsnic/rails-with-angular#readme"
+}
